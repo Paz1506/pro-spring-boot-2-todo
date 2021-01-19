@@ -1,0 +1,8 @@
+GET http://localhost:8080/api/todo?format=xml
+Accept: */*
+Cache-Control: no-cache
+
+<> 2021-01-17T072640.200.json
+
+###
+
