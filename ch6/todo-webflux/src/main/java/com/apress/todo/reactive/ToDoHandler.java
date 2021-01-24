@@ -11,6 +11,7 @@ import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 
 import static org.springframework.web.reactive.function.BodyInserters.fromObject;
+import static org.springframework.web.reactive.function.BodyInserters.fromValue;
 
 /**
  * @author Pavel Zaytsev
@@ -33,7 +34,8 @@ public class ToDoHandler {
         return toDo.flatMap(t -> ServerResponse.ok()
                                                .contentType(MediaType.APPLICATION_JSON)
                                                // TODO: Will see, how to invoke now
-                                               .body(fromObject(t)))
+//                                               .body(fromObject(t))) // deprecated
+                                               .body(fromValue(t)))
                    .switchIfEmpty(notFound);
     }
 
