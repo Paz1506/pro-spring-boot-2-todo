@@ -1,0 +1,8 @@
+POST http://localhost:8080/todo
+Accept: */*
+Cache-Control: no-cache
+
+{"id":"e5d6a65e-50b9-4173-b017-e3da56a5e778", "description":"Workout in the mornings", "created":"2021-01-25T16:27:57.738", "modified":"2021-01-25T16:27:57.738", "completed": true}
+
+###
+
