@@ -1,0 +1,11 @@
+curl localhost:8080/api/toDos
+
+// пароль будет меняться при каждом перезапуске в случае дефолтной конфигурации
+// отображается в консоли при запуске приложения
+curl localhost:8080/api/toDos -u user:6dbe0b9a-942f-4556-bcdb-2d78c79d437c
+
+// после переопределения в application.properties
+curl localhost:8080/api/toDos -u apress:springboot2
+
+// ToDoSecurityConfig
+curl localhost:8080/api/toDos -u zps:123
