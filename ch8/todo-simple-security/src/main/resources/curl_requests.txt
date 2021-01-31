@@ -9,3 +9,7 @@ curl localhost:8080/api/toDos -u apress:springboot2
 
 // ToDoSecurityConfig
 curl localhost:8080/api/toDos -u zps:123
+
+// Запрос на получение юзера будет выполнен под служебным пользователем
+// см. todo.authentication.*
+$ curl -X GET localhost:8080/api/toDos -u mark@example.com:secret
